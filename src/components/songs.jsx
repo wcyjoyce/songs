@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
 import { selectSong } from "../actions";
@@ -26,13 +25,8 @@ class Songs extends Component {
   }
 }
 
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({ selectSong }, dispatch);
-// }
-
 function mapStateToProps(state) {
   return { songs: state.songs };
 }
 
 export default connect(mapStateToProps, { selectSong })(Songs);
-// export default connect(mapStateToProps, mapDispatchToProps)(Songs);
