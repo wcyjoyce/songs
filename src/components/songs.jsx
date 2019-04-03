@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
+import { selectSong } from "../actions";
+
 class Songs extends Component {
   renderList() {
     return this.props.songs.map((song) => {
       return (
         <div className="song" key={song.title}>
           <div className="content">{song.title}</div>
-          <button>Select</button>
+          <button onClick={() => this.props.selectSong(song)}>Select</button>
         </div>
       );
     });
@@ -24,8 +26,13 @@ class Songs extends Component {
   }
 }
 
+// function mapDispatchToProps(dispatch) {
+//   return bindActionCreators({ selectSong }, dispatch);
+// }
+
 function mapStateToProps(state) {
   return { songs: state.songs };
 }
 
-export default connect(mapStateToProps)(Songs);
+export default connect(mapStateToProps, { selectSong })(Songs);
+// export default connect(mapStateToProps, mapDispatchToProps)(Songs);
