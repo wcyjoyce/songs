@@ -1,7 +1,38 @@
+@import "songs";
+
 body {
-  font-family: Helvetica;
+  background: black;
+  color: white;
+  font-family: "Montserrat", "sans-serif";
 }
+
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 75%;
+  margin: 50px auto;
+  display: flex;
+}
+
+h1 {
+  font-family: "Montserrat", "sans-serif";
+  margin: 15px 0px;
+}
+
+button {
+  background: #58BF64;
+  font-family: "Montserrat", "sans-serif";
+  border: none;
+  border-radius: 25px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 12px;
+
+  &:hover {
+    cursor: pointer;
+    background: #65D36D;
+    transition: 0.3s ease;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }

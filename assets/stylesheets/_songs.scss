@@ -1,0 +1,26 @@
+.songs {
+  width: 50%;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  padding: 2.5px 0px;
+  font-family: "Montserrat", "sans-serif";
+
+  .content {
+    width: 70%;
+  }
+}
+
+.selected {
+  width: 50%;
+
+  h3 {
+    margin: 15px 0px;
+  }
+
+  p {
+    margin: 0px;
+  }
+}

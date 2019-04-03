@@ -6,7 +6,7 @@ import Song from "./song.jsx";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app">
         <Songs />
         <Song />
       </div>
