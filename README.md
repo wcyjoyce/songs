@@ -1,11 +1,3 @@
-# redux-boilerplate
+# Songs
 
-Simple React + Redux starter with the following config:
-
-- React, ReactDOM
-- Redux, React-Redux
-- Webpack 3
-- Babel with es2015 and react presets
-- Bootstrap (css only, loaded from a cdn in `index.html`)
-- work with `.js` or `.jsx` files
-- main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
+This is a simple Spotify clone that I created with React and Redux as part of [Stephen Grider's](https://www.udemy.com/react-redux/) Modern React with Redux course on [Udemy](https://www.udemy.com/). In this app, users can view a list of songs and click on each song to view more of the song's details. 
